@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet"></link>
+  <link rel="shortcut icon" href="./imagenes/logo.png">
+  <title>Mi Argentina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container_mio">
+        <div class="hola">
+          <div class="izquierda">
+            <a href="index.html">
+              <!-- La etiqueta <img> se utiliza para la imagen, y el atributo src contiene la URL de la imagen. -->
+              <img class="flecha_atras" src="./imagenes/flecha_atras.png" alt="">
+          </a>
+          <p class="DNI_nombre">DNI Digital</p>
+        </div>
+
+          <div class="act">
+            <a href="main.html">
+              <!-- La etiqueta <img> se utiliza para la imagen, y el atributo src contiene la URL de la imagen. -->
+              <img class="reloj_actualizar" src="./imagenes/reloj_act.png" alt="">
+          </a>
+            
+          </div>
+      </div>      
+<div class="contenedor_blanco">
+        <div class="contenedor_nombre">
+          <h1 class="nombre_julian">Juan Carlos Del Pozzi</h1>
+          </div>
+        <div class="contenedor_dni">
+          <div class="flip-card" onclick="toggleFlip(this)">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="imagen_dni" src="./imagenes/dni_adelante.jpg" alt="">
+              </div>
+              <div class="flip-card-back">
+                <img class="imagen_dni" src="./imagenes/dni_atras.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <script>
+            function toggleFlip(card) {
+              card.classList.toggle('active');
+            }
+          </script>
+          </div>
+          <div class="actualizacion_caja">
+            <p class="actualizacion">Última actualización: 23/03/2024 00:45:59 hs</p>
+          </div>
+          <div class="botones_caja">
+            <div class="botonera_caja1">
+              <img class="iconos_ojo" src="./imagenes/icono_ojo.png" alt="ojo">
+              <a class="detalle_link" href="main.html">Ver detalle</a>
+            </div>
+            <div class="botonera_caja2">
+              <img class="iconos_x" src="./imagenes/icono_x.png" alt="">
+              <p class="desactivar_p">Desactivar DNI</p>
+            </div>
+          </div>
+
+
+<div class="botonera" onclick="toggleInterfaz()">
+  <div class="botonera_caja3">
+  <img class="img_qr" src="./imagenes/qr.png" alt="">
+  <p class="verifica_codigo_p">Verifica código QR</p>
+</div>
+<div class="flecha_abajo">
+  <img src="./imagenes/flecha_ampliar.png" alt="">
+</div>
+</div>
+
+<div class="interfaz" id="interfaz">
+    
+    <img class="qr_despliegue" src="./imagenes/qr_imagen.jpg" alt="">
+</div>
+
+
+
+
+
+
+<script>
+  function toggleInterfaz() {
+      var interfaz = document.getElementById("interfaz");
+      if (interfaz.style.display === "none") {
+          interfaz.style.display = "block";
+      } else {
+          interfaz.style.display = "none";
+      }
+  }
+</script>
+
+
+</div>  <!-- Contenedor blanco-->
+</div>
+<footer>
+  
+  <div class="footer_img">
+    <a href="index.html">
+      <!-- La etiqueta <img> se utiliza para la imagen, y el atributo src contiene la URL de la imagen. -->
+      <img class="barra_footer" src="./imagenes/footer12.JPG" alt="">
+  </a>
+  </div>
+</footer>
+</body>
+</html>
